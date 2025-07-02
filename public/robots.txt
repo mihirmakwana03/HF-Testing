@@ -1,0 +1,82 @@
+# Global rules
+User-agent: *
+Allow: /
+Allow: /products/
+Allow: /business/
+Allow: /terms-and-conditions
+Allow: /privacy-policy
+Allow: /quiz
+
+# Sitemap location
+Sitemap: https://happinessfactors.com/sitemap.xml
+
+# Crawl-delay for all bots
+Crawl-delay: 10
+
+# Specific rules for major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 5
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 5
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 5
+
+# Block access to system and development files
+Disallow: /admin/
+Disallow: /storage/
+Disallow: /vendor/
+Disallow: /node_modules/
+Disallow: /bootstrap/
+Disallow: /config/
+Disallow: /database/
+Disallow: /resources/
+Disallow: /routes/
+Disallow: /tests/
+
+# Block access to sensitive files
+Disallow: /*.json$
+Disallow: /*.lock$
+Disallow: /*.xml$
+Disallow: /*.md$
+Disallow: /*.txt$
+Disallow: /*.php$
+Disallow: /*.js$
+Disallow: /*.css$
+Disallow: /*.env$
+Disallow: /*.git$
+Disallow: /*.htaccess$
+Disallow: /*.log$
+Disallow: /*.sql$
+Disallow: /*.zip$
+Disallow: /*.tar$
+Disallow: /*.gz$
+
+# Block access to temporary and cache files
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /cache/
+Disallow: /cgi-bin/
+Disallow: /wp-admin/
+Disallow: /wp-includes/
+
+# Allow access to important assets
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.gif$
+Allow: /*.png$
+Allow: /*.webp$
+Allow: /*.svg$
+Allow: /*.ico$
+Allow: /*.woff$
+Allow: /*.woff2$
+Allow: /*.ttf$
+Allow: /*.eot$
